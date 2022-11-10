@@ -2,16 +2,44 @@
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
+    box-sizing: border-box;
 }
 
+body{min-height: 200vh;}
+
 .home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+.home img.smk{
     width: 100%;
-    height: 90vh;
+    height: 100vh;
     background-attachment: fixed;
-    background-image: url(/asset/smk.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
     opacity: .5;
+}
 
+.home .logo-tkj{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+}
+
+.home .text-box{
+    position: absolute;
+    color: #000000;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    font-weight: bolder;
+}
+
+.home .text-box h1{
+    font-size: 28px;
 }
