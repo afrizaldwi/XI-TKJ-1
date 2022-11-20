@@ -1,31 +1,86 @@
-@import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@500&display=swap');
+/** @format */
 
+@import url("https://fonts.googleapis.com/css2?family=El+Messiri:wght@500&display=swap");
 
 body {
-    font-family: 'El Messiri', sans-serif;
+	font-family: "El Messiri", sans-serif;
 }
 
 section {
-    padding-top: 5rem;
+	padding-top: 5rem;
 }
 
 #home {
-    background-image: url(/asset/smk.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh;
-    display: flex;
-    align-items: center;
+	background-image: url(/asset/smk.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 100vh;
+	display: flex;
+	align-items: center;
 }
 
 #about {
-    height: 100vh;
+	height: 100vh;
 }
 
-#contact{
-    height: 90vh;
-    background:  lightgrey;
-    
+#contact {
+	height: 90vh;
+	background: lightgrey;
+}
+
+.item {
+	transition: 0.5s;
+}
+
+.item:hover {
+	filter: brightness(50%);
+}
+/* 
+.scrollTop{
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-image: url(/asset/arrow.png);
+  z-index: 9999;
+  cursor: pointer;
+  background-color: red;
+  padding: 50px;
+  background-position: center;
+
+  transition: all .5 ease 0s;
+}
+
+.s.scrollTop:hover{
+  background-color: #f7f7f7;
+  color: #000000;
+} */
+
+.scrollTop {
+  position: fixed;
+  bottom: 40px;
+  right: 28px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  opacity: 0;
+  transition: all .5s;
+  z-index: 999;
+  cursor: pointer;
+}
+
+.scrollTop img {
+  height: 40px;
+  width: 40px;
+  transform: rotate(90deg);
+}
+
+.scrollTop.active{
+  opacity: 1;
+  z-index: 999;
 }
