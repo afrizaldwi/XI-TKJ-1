@@ -6,6 +6,15 @@ body {
 	font-family: "El Messiri", sans-serif;
 }
 
+#preloader {
+  background: url(/asset/spinner.gif) no-repeat #000000 center center;
+  background-size: 10%;
+	position: fixed;
+	height: 100vh;
+	width: 100%;
+	z-index: 10000;
+}
+
 section {
 	padding-top: 5rem;
 }
@@ -26,7 +35,7 @@ section {
 }
 
 #contact {
-	height: 90vh;
+	height: 100vh;
 	background: lightgrey;
 }
 
@@ -37,50 +46,47 @@ section {
 .item:hover {
 	filter: brightness(50%);
 }
-/* 
-.scrollTop{
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
-  background-image: url(/asset/arrow.png);
-  z-index: 9999;
-  cursor: pointer;
-  background-color: red;
-  padding: 50px;
-  background-position: center;
-
-  transition: all .5 ease 0s;
-}
-
-.s.scrollTop:hover{
-  background-color: #f7f7f7;
-  color: #000000;
-} */
 
 .scrollTop {
-  position: fixed;
-  bottom: 40px;
-  right: 28px;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 32px;
-  opacity: 0;
-  transition: all .5s;
-  z-index: 999;
-  cursor: pointer;
+	position: fixed;
+	bottom: 40px;
+	right: 28px;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 32px;
+	opacity: 0;
+	transition: all 0.5s;
+	z-index: 99;
+	cursor: pointer;
 }
 
 .scrollTop img {
-  height: 40px;
-  width: 40px;
-  transform: rotate(90deg);
+	height: 40px;
+	width: 40px;
+	transform: rotate(90deg);
 }
 
-.scrollTop.active{
-  opacity: 1;
-  z-index: 999;
+.scrollTop.active {
+	opacity: 1;
+	z-index: 99;
+}
+
+form.sending .btn-loading {
+	display: inline-block;
+}
+
+form.sending .btn-kirim {
+	display: none;
+}
+
+form:not(.sending) .btn-loading {
+	display: none;
+}
+
+form:not(.sending) .btn-kirim {
+	display: inline-block;
 }

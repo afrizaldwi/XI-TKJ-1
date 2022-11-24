@@ -12,6 +12,9 @@
 			rel="stylesheet"
 			href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" />
 
+		<!-- link aos -->
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 		<!-- link css -->
 		<link rel="stylesheet" href="style.css" />
 
@@ -22,6 +25,10 @@
 	</head>
 
 	<body>
+		<!-- preloader start -->
+		<div id="preloader"></div>
+		<!-- preloader end -->
+
 		<!-- navbar start -->
 		<nav
 			class="navbar navbar-expand-lg navbar-dark bg-dark shadow w-100 sticky-top">
@@ -69,8 +76,12 @@
 								Other
 							</a>
 							<ul class="dropdown-menu">
-								<li><a class="dropdown-item" href="jadwal.html">Jadwal</a></li>
-								<li><a class="dropdown-item" href="galery.html">Galery</a></li>
+								<li>
+									<a class="dropdown-item" href="jadwal.html">Jadwal</a>
+								</li>
+								<li>
+									<a class="dropdown-item" href="galery.html">Galery</a>
+								</li>
 								<li>
 									<a
 										class="dropdown-item"
@@ -110,12 +121,19 @@
 		<!-- about start -->
 		<section id="about">
 			<div class="container text-center">
-				<div class="row text-center">
+				<div
+					class="row text-center"
+					data-aos="fade-up"
+					data-aos-duration="1500">
 					<div class="col text-capitalize mb-3">
 						<h1>about us</h1>
 					</div>
 				</div>
-				<div class="row text-center">
+				<div
+					class="row text-center"
+					data-aos="fade-up"
+					data-aos-duration="1500"
+					data-aos-delay="200">
 					<div class="col">
 						<p>
 							Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
@@ -130,14 +148,14 @@
 			</div>
 		</section>
 
-		<section id="anggota">
+		<section>
 			<div class="container text-center text-capitalize">
-				<div class="row justify-content-center">
+				<div class="row justify-content-center" data-aos="fade-up">
 					<div class="col-md-12">
 						<h1>anggota kelas</h1>
 						<h3 class="m-5">wali kelas</h3>
 					</div>
-					<div class="col-md-3 mb-3">
+					<div class="col-md-3 mb-3" data-aos="fade-up">
 						<div class="card">
 							<img
 								src="/asset/icon contact.png"
@@ -150,11 +168,11 @@
 					</div>
 				</div>
 				<div class="row justify-content-center">
-					<div class="col-12">
+					<div class="col-12" data-aos="fade-up">
 						<h3 class="m-5">daftar siswa</h3>
 					</div>
-					<div class="col-md-3 mb-3">
-						<div class="card">
+					<div class="col-md-3 col-6 mb-3">
+						<div class="card daftar-siswa">
 							<img
 								src="/asset/icon contact.png"
 								class="card-img-top"
@@ -164,8 +182,8 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-3 mb-3">
-						<div class="card">
+					<div class="col-md-3 col-6 mb-3">
+						<div class="card daftar-siswa">
 							<img
 								src="/asset/icon contact.png"
 								class="card-img-top"
@@ -177,8 +195,8 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-3 mb-3">
-						<div class="card">
+					<div class="col-md-3 col-6 mb-3">
+						<div class="card daftar-siswa">
 							<img
 								src="/asset/icon contact.png"
 								class="card-img-top"
@@ -188,8 +206,8 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-3 mb-3">
-						<div class="card">
+					<div class="col-md-3 col-6 mb-3">
+						<div class="card daftar-siswa">
 							<img
 								src="/asset/icon contact.png"
 								class="card-img-top"
@@ -201,8 +219,8 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-3 mb-3">
-						<div class="card">
+					<div class="col-md-3 col-6 mb-3">
+						<div class="card daftar-siswa">
 							<img
 								src="/asset/icon contact.png"
 								class="card-img-top"
@@ -212,8 +230,8 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-3 mb-3">
-						<div class="card">
+					<div class="col-md-3 col-6 mb-3">
+						<div class="card daftar-siswa">
 							<img
 								src="/asset/icon contact.png"
 								class="card-img-top"
@@ -225,8 +243,8 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-3 mb-3">
-						<div class="card">
+					<div class="col-md-3 col-6 mb-3">
+						<div class="card daftar-siswa">
 							<img
 								src="/asset/icon contact.png"
 								class="card-img-top"
@@ -236,8 +254,8 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-3 mb-3">
-						<div class="card">
+					<div class="col-md-3 col-6 mb-3">
+						<div class="card daftar-siswa">
 							<img
 								src="/asset/icon contact.png"
 								class="card-img-top"
@@ -249,8 +267,8 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-3 mb-3">
-						<div class="card">
+					<div class="col-md-3 col-6 mb-3">
+						<div class="card daftar-siswa">
 							<img
 								src="/asset/icon contact.png"
 								class="card-img-top"
@@ -260,8 +278,8 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-3 mb-3">
-						<div class="card">
+					<div class="col-md-3 col-6 mb-3">
+						<div class="card daftar-siswa">
 							<img
 								src="/asset/icon contact.png"
 								class="card-img-top"
@@ -273,8 +291,8 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-3 mb-3">
-						<div class="card">
+					<div class="col-md-3 col-6 mb-3">
+						<div class="card daftar-siswa">
 							<img
 								src="/asset/icon contact.png"
 								class="card-img-top"
@@ -286,8 +304,8 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-3 mb-3">
-						<div class="card">
+					<div class="col-md-3 col-6 mb-3">
+						<div class="card daftar-siswa">
 							<img
 								src="/asset/icon contact.png"
 								class="card-img-top"
@@ -297,8 +315,8 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-3 mb-3">
-						<div class="card">
+					<div class="col-md-3 col-6 mb-3">
+						<div class="card daftar-siswa">
 							<img
 								src="/asset/icon contact.png"
 								class="card-img-top"
@@ -310,8 +328,8 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-3 mb-3">
-						<div class="card">
+					<div class="col-md-3 col-6 mb-3">
+						<div class="card daftar-siswa">
 							<img
 								src="/asset/icon contact.png"
 								class="card-img-top"
@@ -323,8 +341,8 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-3 mb-3">
-						<div class="card">
+					<div class="col-md-3 col-6 mb-3">
+						<div class="card daftar-siswa">
 							<img
 								src="/asset/icon contact.png"
 								class="card-img-top"
@@ -336,8 +354,8 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-3 mb-3">
-						<div class="card">
+					<div class="col-md-3 col-6 mb-3">
+						<div class="card daftar-siswa">
 							<img
 								src="/asset/icon contact.png"
 								class="card-img-top"
@@ -347,8 +365,8 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-3 mb-3">
-						<div class="card">
+					<div class="col-md-3 col-6 mb-3">
+						<div class="card daftar-siswa">
 							<img
 								src="/asset/icon contact.png"
 								class="card-img-top"
@@ -358,8 +376,8 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-3 mb-3">
-						<div class="card">
+					<div class="col-md-3 col-6 mb-3">
+						<div class="card daftar-siswa">
 							<img
 								src="/asset/icon contact.png"
 								class="card-img-top"
@@ -369,8 +387,8 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-3 mb-3">
-						<div class="card">
+					<div class="col-md-3 col-6 mb-3">
+						<div class="card daftar-siswa">
 							<img
 								src="/asset/icon contact.png"
 								class="card-img-top"
@@ -382,8 +400,8 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-3 mb-3">
-						<div class="card">
+					<div class="col-md-3 col-6 mb-3">
+						<div class="card daftar-siswa">
 							<img
 								src="/asset/icon contact.png"
 								class="card-img-top"
@@ -393,8 +411,8 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-3 mb-3">
-						<div class="card">
+					<div class="col-md-3 col-6 mb-3">
+						<div class="card daftar-siswa">
 							<img
 								src="/asset/icon contact.png"
 								class="card-img-top"
@@ -406,8 +424,8 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-3 mb-3">
-						<div class="card">
+					<div class="col-md-3 col-6 mb-3">
+						<div class="card daftar-siswa">
 							<img
 								src="/asset/icon contact.png"
 								class="card-img-top"
@@ -417,8 +435,8 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-3 mb-3">
-						<div class="card">
+					<div class="col-md-3 col-6 mb-3">
+						<div class="card daftar-siswa">
 							<img
 								src="/asset/icon contact.png"
 								class="card-img-top"
@@ -428,8 +446,8 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-3 mb-3">
-						<div class="card">
+					<div class="col-md-3 col-6 mb-3">
+						<div class="card daftar-siswa">
 							<img
 								src="/asset/icon contact.png"
 								class="card-img-top"
@@ -439,8 +457,8 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-3 mb-3">
-						<div class="card">
+					<div class="col-md-3 col-6 mb-3">
+						<div class="card daftar-siswa">
 							<img
 								src="/asset/icon contact.png"
 								class="card-img-top"
@@ -450,8 +468,8 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-3 mb-3">
-						<div class="card">
+					<div class="col-md-3 col-6 mb-3">
+						<div class="card daftar-siswa">
 							<img
 								src="/asset/icon contact.png"
 								class="card-img-top"
@@ -461,8 +479,8 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-3 mb-3">
-						<div class="card">
+					<div class="col-md-3 col-6 mb-3">
+						<div class="card daftar-siswa">
 							<img
 								src="/asset/icon contact.png"
 								class="card-img-top"
@@ -474,8 +492,8 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-3 mb-3">
-						<div class="card">
+					<div class="col-md-3 col-6 mb-3">
+						<div class="card daftar-siswa">
 							<img
 								src="/asset/icon contact.png"
 								class="card-img-top"
@@ -485,8 +503,8 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-3 mb-3">
-						<div class="card">
+					<div class="col-md-3 col-6 mb-3">
+						<div class="card daftar-siswa">
 							<img
 								src="/asset/icon contact.png"
 								class="card-img-top"
@@ -498,8 +516,8 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-3 mb-3">
-						<div class="card">
+					<div class="col-md-3 col-6 mb-3">
+						<div class="card daftar-siswa">
 							<img
 								src="/asset/icon contact.png"
 								class="card-img-top"
@@ -511,8 +529,8 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-3 mb-3">
-						<div class="card">
+					<div class="col-md-3 col-6 mb-3">
+						<div class="card daftar-siswa">
 							<img
 								src="/asset/icon contact.png"
 								class="card-img-top"
@@ -522,8 +540,8 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-3 mb-3">
-						<div class="card">
+					<div class="col-md-3 col-6 mb-3">
+						<div class="card daftar-siswa">
 							<img
 								src="/asset/icon contact.png"
 								class="card-img-top"
@@ -533,8 +551,8 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-3 mb-3">
-						<div class="card">
+					<div class="col-md-3 col-6 mb-3">
+						<div class="card daftar-siswa">
 							<img
 								src="/asset/icon contact.png"
 								class="card-img-top"
@@ -546,8 +564,8 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-3 mb-3">
-						<div class="card">
+					<div class="col-md-3 col-6 mb-3">
+						<div class="card daftar-siswa">
 							<img
 								src="/asset/icon contact.png"
 								class="card-img-top"
@@ -557,8 +575,8 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-3 mb-3">
-						<div class="card">
+					<div class="col-md-3 col-6 mb-3">
+						<div class="card daftar-siswa">
 							<img
 								src="/asset/icon contact.png"
 								class="card-img-top"
@@ -570,8 +588,8 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-3 mb-3">
-						<div class="card">
+					<div class="col-md-3 col-6 mb-3">
+						<div class="card daftar-siswa">
 							<img
 								src="/asset/icon contact.png"
 								class="card-img-top"
@@ -597,8 +615,9 @@
 				<div class="row justify-content-center">
 					<div class="col-md-8">
 						<div
-							class="alert alert-success alert-dismissible fade show d-none my-alert"
+							class="alert alert-success alert-dismissible fade show d-none my-alert text-capitalize"
 							role="alert">
+							<strong>selamat!</strong>
 							pesan anda berhasil dikirim
 							<button
 								type="button"
@@ -606,6 +625,7 @@
 								data-bs-dismiss="alert"
 								aria-label="Close"></button>
 						</div>
+						<!-- form contact start -->
 						<form name="contact-form-xi-tkj-1">
 							<div class="mb-3">
 								<label for="name" class="form-label">Nama Lengkap</label>
@@ -633,12 +653,15 @@
 									rows="3"
 									name="pesan"></textarea>
 							</div>
+
+							<!-- btn kirim -->
 							<button type="submit" class="btn btn-primary btn-kirim">
 								Kirim
 							</button>
 
+							<!-- btn loading -->
 							<button
-								class="btn btn-primary btn-loading d-none"
+								class="btn btn-primary btn-loading"
 								type="button"
 								disabled>
 								<span
@@ -648,6 +671,7 @@
 								Loading...
 							</button>
 						</form>
+						<!-- form contact end -->
 					</div>
 				</div>
 			</div>
@@ -674,16 +698,11 @@
 
 		<!-- footer end -->
 
+		<!-- js aos -->
+		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
 		<!-- js typed.js -->
 		<script src="typed.js"></script>
-		<script>
-			var typed = new Typed(".auto-input", {
-				strings: ["XI TKJ 1", "SMKN1CE", "Alas Jurit"],
-				typeSpeed: 100,
-				backSpeed: 100,
-				loop: true,
-			});
-		</script>
 
 		<!-- js bootstrap -->
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
