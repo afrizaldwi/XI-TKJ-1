@@ -6,14 +6,17 @@ body {
 	font-family: "El Messiri", sans-serif;
 }
 
+/* preloader */
 #preloader {
-  background: url(/asset/spinner.gif) no-repeat #000000 center center;
-  background-size: 10%;
+	background: url(/asset/hourglass.gif) no-repeat #ffffff center center;
+	background-size: 10%;
 	position: fixed;
 	height: 100vh;
 	width: 100%;
 	z-index: 10000;
 }
+/* ----------------------- */
+
 
 section {
 	padding-top: 5rem;
@@ -47,6 +50,8 @@ section {
 	filter: brightness(50%);
 }
 
+/* back to top */
+
 .scrollTop {
 	position: fixed;
 	bottom: 40px;
@@ -74,6 +79,9 @@ section {
 	opacity: 1;
 	z-index: 99;
 }
+/* ----------------------- */
+
+/* contact form button */
 
 form.sending .btn-loading {
 	display: inline-block;
@@ -90,3 +98,4 @@ form:not(.sending) .btn-loading {
 form:not(.sending) .btn-kirim {
 	display: inline-block;
 }
+/* ----------------------- */

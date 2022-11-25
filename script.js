@@ -6,11 +6,7 @@ let loader = document.querySelector("#preloader");
 
 window.addEventListener("load", () => {
 	loader.style.display = "none";
-})
-
-
-
-
+});
 
 // bact to top
 function scrollToTop() {
@@ -27,6 +23,25 @@ window.addEventListener("scroll", () => {
 	}
 });
 
+// typed text
+var typed = new Typed(".auto-input", {
+	strings: ["XI TKJ 1", "SMKN1CE", "Alas Jurit"],
+	typeSpeed: 100,
+	backSpeed: 100,
+	loop: true,
+});
+
+// aos animation
+const daftarSiswa = document.querySelectorAll(".daftar-siswa");
+
+daftarSiswa.forEach((img, i) => {
+	img.dataset.aos = "fade-up";
+	img.dataset.aosDelay = i * 50;
+});
+
+AOS.init({
+	once: true,
+});
 
 // contact form
 const scriptURL =
@@ -55,26 +70,4 @@ form.addEventListener("submit", (e) => {
 			console.log("Success!", response);
 		})
 		.catch((error) => console.error("Error!", error.message));
-});
-
-
-// aos animation
-const daftarSiswa = document.querySelectorAll(".daftar-siswa");
-
-daftarSiswa.forEach((img, i) => {
-	img.dataset.aos = "fade-up";
-	img.dataset.aosDelay = i * 50;
-});
-
-AOS.init({
-	once: true,
-});
-
-
-// typed text
-var typed = new Typed(".auto-input", {
-	strings: ["XI TKJ 1", "SMKN1CE", "Alas Jurit"],
-	typeSpeed: 100,
-	backSpeed: 100,
-	loop: true,
 });
