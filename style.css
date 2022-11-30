@@ -8,7 +8,7 @@ body {
 
 /* preloader */
 #preloader {
-	background: url(/asset/hourglass.gif) no-repeat #ffffff center center;
+	background: url(/asset/img/hourglass.gif) no-repeat #ffffff center center;
 	background-size: 10%;
 	position: fixed;
 	height: 100vh;
@@ -23,7 +23,7 @@ section {
 }
 
 #home {
-	background-image: url(/asset/smk.jpg);
+	background-image: url(/asset/img/smk.jpg);
 	background-size: cover;
 	background-attachment: fixed;
 	background-position: center;
